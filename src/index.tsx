@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 
-const uri = process.env.NODE_ENV !== 'production' ? 'https://tasklist-backend.samhoque.dev/graphql' : 'http://localhost:4000/graphql';
+const uri = 'http://localhost:4000/graphql';
 
 const client = new ApolloClient({
     uri, cache: new InMemoryCache()
